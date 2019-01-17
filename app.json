@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1c1b21",
+    "navigationBarTitleText": "迷你翻译机",
+    "navigationBarTextStyle": "white",
+    "disableScroll": true
+  },
+  "tabBar": {
+    "position":"top",
+    "color": "#333",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "翻译"
+     
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史"
+      }
+    ]
+  }
+}

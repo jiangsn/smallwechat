@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class='layout'>
+<view class='selectLang' >
+  <picker bindchange="bindPickerChange"  range="{{language}}" class="select" >
+  <text class="picker iconfont icon-xiala" >语言</text>
+  </picker>
+  <text class='lang'>{{language[index]}}</text>
+</view>
+
+
+<view class='inputWrapper' >
+<textarea class='userInput' value="{{query}}" bindinput='translate'
+placeholder="请输入需要翻译的文字" auto-focus='true' show-confirm-bar="true"/>
+
+</view>
+
+
+
+
+
+<view class='result'>
+<text selectable='true' bindtap='textSetCopyStrtap' data-textstr='{{translateResult}}'>{{translateResult}}</text>
+</view>
+
+
+
+</view>
+
+
+
